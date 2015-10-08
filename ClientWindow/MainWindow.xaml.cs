@@ -80,7 +80,7 @@ namespace ClientWindow
                 var result = String.Empty;
                 if (!string.IsNullOrEmpty(commandText))
                 {
-                    result = _sshClient.RunCommand(commandText);
+                    result = _sshClient.ProcessCommand(commandText);
                 }
                 textBoxShell.Text += $"\n{result}";
 

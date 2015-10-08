@@ -35,7 +35,7 @@ namespace Shell
                     break;
                 }
 
-                var result = _sshClient.RunCommand(input);
+                var result = _sshClient.ProcessCommand(input);
                 if (!string.IsNullOrEmpty(result))
                 {
                     Console.WriteLine(result);
